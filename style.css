@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "Absolute Blonde";
+  src: url("./fonts/Absolute\ Blonde.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic Std Medium";
+  src: url("./fonts/ITC\ Avant\ Garde\ Gothic\ Std\ Medium.otf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 20px 50px;
+  display: inline-block;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  font-family: "Absolute Blonde", sans-serif;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  gap: 130px;
+  height: 100vh;
+  position: relative;
+  margin-left: 125px;
+}
+
+.cast {
+  display: flex;
+  gap: 150px;
+  margin-top: 80px;
+}
+
+.cast span {
+  font-size: 80px;
+  text-align: center;
+}
+
+.phrase {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: "ITC Avant Garde Gothic Std Medium", sans-serif;
+  justify-content: flex-start;
+  margin-left: 71px;
+}
+
+.phrase h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-left: 50px;
+}
+
+.cine p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.cine p:last-child {
+  font-size: 25px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social i {
+  font-size: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  font-family: "Absolute Blonde";
+  color: #fff;
+  font-size: 22px;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  background: #de3aa4;
+}
+
+footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  bottom: 20px;
+  left: -40px;
+}
+
+footer i {
+  font-size: 40px;
+}
+
+footer i:first-child {
+  cursor: pointer;
+}
+
+.ph-speaker-slash {
+  display: none;
+}
+
+#scroll {
+  margin-left: 175px;
+}
+
+#openModalBtn {
+  cursor: pointer;
+}
+
+#modalContainer {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+  background: rgba(0, 0, 0, 0.7);
+  animation: fadeIn 0.5s;
+}
+
+iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: 5px solid #fff;
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

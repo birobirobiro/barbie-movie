@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbie - Filme</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <script src="main.js" defer></script>
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <link rel="shortcut icon" href="./assets/favicon.PNG" type="image/png" />
+</head>
+
+<body>
+  <div class="container">
+    <section class="cast">
+      <span>Margot Robbie</span>
+      <span>Ryan Gosling</span>
+    </section>
+
+    <section class="phrase">
+      <h2>Ela é tudo.</h2>
+      <h2>Ele é só o Ken.</h2>
+    </section>
+
+    <section class="infos">
+      <div class="cine">
+        <p>20 De Julho</p>
+        <p>Somente nos cinemas</p>
+      </div>
+
+      <div class="social">
+        <i class="ph-duotone ph-tiktok-logo"></i>
+        <i class="ph-duotone ph-twitter-logo"></i>
+        <i class="ph-duotone ph-instagram-logo"></i>
+        <i class="ph-duotone ph-facebook-logo"></i>
+      </div>
+
+      <section class="buttons">
+        <button><a href="https://www.google.com/search?q=barbie" target="_blank"> Compre seu ingresso </a></button>
+        <button><a href="#" id="openModalBtn">Assista ao trailer</a></button>
+      </section>
+    </section>
+
+    <div id="modalContainer">
+      <iframe id="youtubeIframe" width="1280" height="720" src="https://www.youtube.com/embed/GRyt3Ov4zz0?controls=0"
+        frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+      <i class="ph-duotone ph-speaker-high" onclick="playAudio()"></i>
+      <i class="ph-duotone ph-speaker-slash"></i>
+
+      <audio id="music" loop>
+        <source src="./audio/barbie.mp3" type="audio/mpeg" />
+      </audio>
+
+      <img src="./assets/warner-logo.svg" alt="" />
+
+      <img src="./assets/scroll.gif" alt="" width="30px" height="30px" id="scroll" />
+    </footer>
+  </div>
+</body>
+
+</html>
